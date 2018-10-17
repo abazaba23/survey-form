@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Steven's Gaming Survey</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<h1 id="title">Gaming Survey</h1>
+	<div id="main">
+		<p id="description">Tell us about your gaming preferences.</p>
+
+		<form id="survey-form">
+			<!-- 
+				name email age 
+			-->
+			<label for="name" id="name-label">* Name:</label>
+			<input id="name" name="name" type="text" placeholder="First and last name" required>
+			<br>
+			<label for="email" id="email-label">* E-mail:</label>
+			<input id="email" name="email" type="email" placeholder="example@text.com" required>
+			<br>
+			<label for="number" id="number-label">* Age:</label>
+			<input id="number" name="age" type="number" min="1" max="110" placeholder="Age" required>
+			<br>
+
+			<!-- 
+				dropdown 
+			-->
+			<label for="ganre">* Favorite game ganre: </label>
+			<select id="dropdown" name="ganre" required>
+				<option value=""></option>
+				<option value="fps">FPS</option>
+				<option value="walking-sim">Walking Sim.</option>
+				<option value="rts">RTS</option>
+				<option value="visual-novel">Visual Novel</option>
+			</select>
+			<hr>
+
+			<!-- 
+				radio 
+			-->
+			<p>* How much time do you spend gaming weekly?</p>
+			<ul>
+				<li class="radio">
+					<label>
+						<input name="gametime" value="1" type="radio" class="gametime" required> 0-2 Hours
+					</label>
+				</li>
+				<li class="radio">
+					<label>
+						<input name="gametime" value="2" type="radio" class="gametime" required> 2-4 Hours
+					</label>
+				</li>
+				<li class="radio">
+					<label>
+						<input name="gametime" value="3" type="radio" class="gametime" required> 4-8 Hours
+					</label>
+				</li>
+				<li class="radio">
+					<label>
+						<input name="gametime" value="4" type="radio" class="gametime" required> 8+ Hours
+					</label>
+				</li>
+			</ul>
+			<hr>
+
+			<!-- 
+				checkboxes 
+			-->
+			<p>What communities do you participate in?</p>
+			<ul class="community">
+				<li>
+					<label>
+						<input name="communities" type="checkbox" class="community" value="4"> Steam Group
+					</label>
+				</li>
+				<li>
+					<label>
+						<input name="communities" type="checkbox" class="community" value="1"> Discord
+					</label>
+				</li>
+				<li>
+					<label>
+						<input name="communities" type="checkbox" class="community" value="2"> Reddit
+					</label>
+				</li>
+				<li>
+					<label>
+						<input name="communities" type="checkbox" class="community" value="3"> Forum
+					</label>
+				</li>
+			</ul>
+			<hr>
+
+			<!-- 
+				text box 
+			-->
+			<p>Please tell us why you choose to spend time gaming, rather than another leisurely activity below:</p>
+			<textarea id="user-story" name="user-story" class="input-field" placeholder="Your Story..."></textarea>
+			<hr>
+
+			<!-- 
+				submit button
+			-->
+			<p><button id="submit" type="submit">Submit</button></p>
+		</form>
+	</div>
+	<!-- script required to check if website meets FCCs project requirements -->
+	<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+
+</html>
+
+<!-- Made by Steven Andersen -->
